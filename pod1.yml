@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: new-pod1
-  name: new-pod1-lab-19
+  name: new-pod1-lab-19-01
   namespace: demo-lab01
 spec:
   containers:
@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: rest-simpleapp-svc-lab-19
+  name: rest-simpleapp-svc-lab-19-01
   namespace: demo-lab01
 spec:
   type: NodePort
@@ -25,5 +25,5 @@ spec:
   ports:
     - port: 8088
       targetPort: 80 
-      nodePort: 32100 
+      nodePort: 32101 
       
