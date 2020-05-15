@@ -1,15 +1,5 @@
 box:
  id: node
-workflows:
-  - name: test
-    pipelines: 
-    - name: build
-    - name: push-build 
-      requires:
-      - build
-    - name: deploy-to-minikube
-      requires:
-      - push-build
 
 # Build definition
 build:
